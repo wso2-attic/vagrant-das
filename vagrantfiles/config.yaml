@@ -14,30 +14,9 @@
 
 servers:
   -
-    hostname: mysql
-    box: mysql
-    ip: 172.28.128.3
-    ram: 2048
-    cpu: 1
-    provisioner_script: mysql/provisioner/db_provisioner.sh
-
-  -
-    hostname: api-manager-analytics
-    box: wso2am-analytics
+    hostname: data-analytics-server
+    box: wso2das
     ip: 172.28.128.5
     ram: 2048
     cpu: 1
-    provisioner_script: api-manager-analytics/provisioner/product_provisioner.sh
-
-  -
-    hostname: api-manager
-    box: wso2am
-    ip: 172.28.128.4
-    ram: 2048
-    cpu: 1
-    provisioner_script: api-manager/provisioner/product_provisioner.sh
-
-
-
-
-
+    provisioner_script: data-analytics-server/provisioner/product_provisioner.sh
