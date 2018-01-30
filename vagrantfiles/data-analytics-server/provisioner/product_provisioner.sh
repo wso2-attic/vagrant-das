@@ -18,14 +18,7 @@ WSO2_SERVER_VERSION=3.1.0
 WORKING_DIRECTORY=/home/vagrant
 JAVA_HOME=/opt/java/
 DEFAULT_MOUNT=/vagrant
-CONFIGURATIONS=${DEFAULT_MOUNT}/data-analytics-server/confs
 NODE_IP=$(/sbin/ifconfig eth1 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}')
-
-# copy files with configuration changes
-echo "Copying the files with configuration changes to the server pack..."
-cp -TRv ${CONFIGURATIONS}/repository/conf/ ${WORKING_DIRECTORY}/${WSO2_SERVER}-${WSO2_SERVER_VERSION}/repository/conf/
-cp -TRv ${CONFIGURATIONS}/repository/deployment/server/ ${WORKING_DIRECTORY}/${WSO2_SERVER}-${WSO2_SERVER_VERSION}/repository/deployment/server/
-echo "Successfully copied the files."
 
 export JAVA_HOME
 
