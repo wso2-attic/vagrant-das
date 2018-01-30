@@ -18,7 +18,7 @@ WSO2_SERVER_VERSION=3.1.0
 WORKING_DIRECTORY=/home/vagrant
 JAVA_HOME=/opt/java/
 DEFAULT_MOUNT=/vagrant
-CONFIGURATIONS=${DEFAULT_MOUNT}/api-manager/confs
+CONFIGURATIONS=${DEFAULT_MOUNT}/data-analytics-server/confs
 NODE_IP=$(/sbin/ifconfig eth1 | grep 'inet addr:' | cut -d: -f2 | awk '{ print $1}')
 
 # copy files with configuration changes
