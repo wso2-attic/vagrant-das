@@ -18,10 +18,10 @@ Virtualization should be enabled in BIOS settings before building the boxes.
 
 2. Build Vagrant boxes for external MySQL database and Data Analytics Server using the Vagrant box automation resources.
 
-3. Move to `vagrantfiles` folder.
+3. Move to `vagrantfile` folder.
 
 ```
-	cd vagrantfiles
+	cd vagrantfile
 ```
 
 4. Spawn up the Vagrant setup.
